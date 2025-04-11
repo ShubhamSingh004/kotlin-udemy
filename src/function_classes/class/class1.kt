@@ -1,6 +1,6 @@
 package function_classes.`class`
 
-class Dog(var name: String, var breed: String){
+class Dog(var name: String, var breed: String, var age: Int = 0){
     init{
         println("Init block")
     }
