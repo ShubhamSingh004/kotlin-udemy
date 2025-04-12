@@ -21,4 +21,6 @@ fun main(){
 
     println(l2.contains("Item1"))   // true
 
+    l2.removeLast()
+    println(l2)
 }
