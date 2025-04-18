@@ -1,3 +1,8 @@
+import java.util.*
+
+data class vase(var color: String, var design: String)
+
+
 fun main(){
     val l = listOf("Item1", "item 2", 1, 2)     // immuatable list
     val l2 = mutableListOf("Item1", "item 2", 1, 2)
@@ -23,4 +28,22 @@ fun main(){
 
     l2.removeLast()
     println(l2)
+
+    // map func
+    val l3 = listOf(1,2,3,4)
+    val doubled = l3.map{ it * 2}
+
+    println(doubled)
+
+    // copy function
+    val blueVase = vase(color = "Blue", design = "Rose")
+    val redVase = blueVase.copy(color = "Red")
+
+    println("$blueVase \n$redVase")
+
+    // let function
+    val name: String? = "Shub"
+    name?.let {
+        println(name.uppercase())
+    }
 }
